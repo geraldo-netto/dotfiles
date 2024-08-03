@@ -1,4 +1,6 @@
 # path: /etc/default/grub
 # sudo update-grub
 
-GRUB_CMDLINE_LINUX_DEFAULT="mitigations=off zswap.enabled=1 zswap.zpool=z3fold zswap.compressor=lz4 drm.vblankoffdelay=0 amdgpu.gpu_recovery=1 intel_iommu=on iommu=pt nosgx intel_idle_max_cstate=3 nohpet crashkernel=auto"
+#GRUB_TIMEOUT_STYLE=hidden
+GRUB_TIMEOUT=3
+GRUB_CMDLINE_LINUX_DEFAULT="mitigations=off zswap.enabled=1 zswap.zpool=z3fold zswap.compressor=lz4 drm.vblankoffdelay=0 amdgpu.gpu_recovery=1 intel_iommu=on iommu=pt nosgx intel_idle_max_cstate=3 nohpet crashkernel=auto usbcore.autosuspend=-1 rcu_nocbs=all rcutree.enable_rcu_lazy=1"
