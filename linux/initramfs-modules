@@ -1,0 +1,4 @@
+# path: /etc/initramfs-tools/modules
+# sudo update-initramfs -u
+
+z3fold
